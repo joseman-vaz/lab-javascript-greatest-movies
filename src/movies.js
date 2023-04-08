@@ -55,7 +55,7 @@ function dramaMoviesScore(moviesArray) {
 function orderByYear(moviesArray) {
   const movieOrderAsc = moviesArray.slice();
   movieOrderAsc.sort((a, b) => {
-    if (a.year > b.year) 1;
+    if (a.year > b.year) return 1;
     else if (b.year > a.year) return -1;
     else {
       if (a.title > b.title) return 1;
